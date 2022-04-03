@@ -23,9 +23,9 @@ import {
 } from "@chakra-ui/icons";
 
 
-import NGTLogo from '../public/NGTLogo.svg'
-import { motion } from "framer-motion";
+import NGTWhite from '../public/ngtWhite.jpeg'
 
+import { motion } from "framer-motion";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -63,10 +63,9 @@ export default function WithSubnavigation() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-
-            Logo
+              {/* <img src="https://cdn.dribbble.com/users/11296042/screenshots/17911264/media/1a8b43e4049d9f8964faf59d63bc7985.jpeg?compress=1&resize=800x600&vertical=top" alt="" width = "100"  style = {{ display: "flex", textAlign: "center"}} /> */}
+              NGT
           </Text>
-
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
