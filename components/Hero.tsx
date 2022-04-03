@@ -14,7 +14,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import { motion } from "framer-motion";
+
 
 export default function CallToActionWithVideo() {
   return (
@@ -60,15 +60,7 @@ export default function CallToActionWithVideo() {
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
           >
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ rotate: 0, scale: 1 }}
-              transition={{
-                type: "spring",
-                stiffness: 260,
-                damping: 20,
-              }}
-            >
+            
               <Button
                 rounded={"full"}
                 size={"lg"}
@@ -80,17 +72,9 @@ export default function CallToActionWithVideo() {
               >
                 Get started
               </Button>
-            </motion.div>
+     
 
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ rotate: 0, scale: 1 }}
-              transition={{
-                type: "spring",
-                stiffness: 260,
-                damping: 20,
-              }}
-            >
+            
               <Button
                 rounded={"full"}
                 size={"lg"}
@@ -100,7 +84,6 @@ export default function CallToActionWithVideo() {
               >
                 How It Works
               </Button>
-            </motion.div>
           </Stack>
         </Stack>
         <Flex
